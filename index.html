@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/requestanimationframe.js"></script>
+    <script src="js/gradient.js"></script>
+    <meta charset="UTF-8">
+    <title>pyLoad Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="img/icon.ico"/>
+    <link rel="icon" type="image/ico" href="img/icon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/github-light.css" media="screen">
+  </head>
+  <body>
+    <div id="page-header" class="page-header">
+      <canvas id="page-canvas"></canvas>
+      <h1 class="project-name">
+       <picture>
+          <source srcset="img/logo.png" media="(max-width: 42em)">
+          <source srcset="img/banner.png">
+          <img src="img/banner.png">
+        </picture>
+      </h1>
+      <script src="js/particle.js"></script>
+      <h2 class="project-tagline">Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web</h2>
+      <a href="https://github.com/vuolter/pyload" class="btn">View on GitHub</a>
+      <a href="https://github.com/pyload/pyload/milestones" class="btn">Roadmap</a>
+      <a href="https://github.com/pyload/pyload/releases" class="btn-strong">Get pyLoad</a>
+      <a href="http://pyload.org/wiki" class="btn">Wiki</a>
+      <a href="http://forum.pyload.org/" class="btn">Forum</a>
+      <a href="http://docs.pyload.org/" class="btn">Documentation</a>
+    </div>
+
+    <section class="main-content">
+      <img src="img/sample.png">
+
+      <p><strong>pyLoad</strong> was developed to run on NAS, next-gen routers and headless home servers, whatever device able to connect to internet
+and supporting the Python programming language, so it's available for all kind of operating systems and a wide range of hardware platforms;
+you can even install on your PC or Mac if you want and control it entirely by web in the same way.</p>
+
+<p>Its friendly Web User Interface allows full managing and easily remote access from anywhere!</p>
+
+<p>All common video-sites, one-click-hosters, container formats and well known web standards are supported to allow you to download your files.
+Additionaly, pyLoad has a great variety of plugins to automate common tasks and make unattended running possible.</p>
+
+<p>pyLoad has a fully featured and well documented Application Programming Interface, easily extendable and accessible by external tools, cross-platform apps or other softwares.
+Just take a look to the <a href="https://github.com/pyload/pyload/tree/master#development">Development section</a> for more info about that.</p>
+
+<p>For news, wiki, forum and further info visit the pyLoad website: <a href="http://pyload.org/">http://pyload.org/</a>.</p>
+
+<p>Or joining us at <code>#pyload</code> on <code>irc.freenode.net</code>.</p>
+
+<h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h2>
+
+<blockquote>
+<p><strong>Note:</strong>
+You need <strong>at least Python 2.5</strong> or <strong>at most Python 2.7</strong> to run pyLoad and its required software dependencies.</p>
+
+<blockquote>
+<p><strong>Python 3</strong> and <strong>PyPy</strong> are not yet supported.</p>
+</blockquote>
+</blockquote>
+
+<p>Pre-build packages are provided with all the software dependencies required to run pyLoad flawlessly on the referenced platform, Python included.</p>
+
+<p>But you can even get the source code here and manually install the required packages afterwards.
+Please refer to the <a href="https://github.com/pyload/pyload/tree/master#dependencies">Dependencies section</a> for more info about that.</p>
+
+<blockquote>
+<p><strong>Note:</strong>
+If you wanna use pyLoad on Windows, it's hightly recommented to install the latest <strong>official</strong> pre-build package for that platform.</p>
+</blockquote>
+
+<ul>
+<li>
+<strong>Pre-build packages</strong>: <a href="https://github.com/pyload/pyload/releases">https://github.com/pyload/pyload/releases</a>.</li>
+<li>
+<strong>Latest stable version</strong> (source code): <a href="https://github.com/pyload/pyload/archive/stable.zip">https://github.com/pyload/pyload/archive/stable.zip</a>.</li>
+<li>
+<strong>Latest development version</strong> (source code): <a href="https://github.com/pyload/pyload/archive/master.zip">https://github.com/pyload/pyload/archive/master.zip</a>.</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>...</p>
+
+<p>You can install any missing software package from the <em>Python Package Index</em> typing:</p>
+
+<pre><code>pip install &lt;package-name&gt;
+</code></pre>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<h3>
+<a id="required" class="anchor" href="#required" aria-hidden="true"><span class="octicon octicon-link"></span></a>Required</h3>
+
+<ul>
+<li><strong>Beaker</strong></li>
+<li><strong>Getch</strong></li>
+<li><strong>MultipartPostHandler</strong></li>
+<li><strong>SafeEval</strong></li>
+<li><strong>bottle</strong></li>
+<li><strong>colorama</strong></li>
+<li><strong>jinja2</strong></li>
+<li><strong>markupsafe</strong></li>
+<li>
+<strong>pycurl</strong> (python-curl)</li>
+<li><strong>rename_process</strong></li>
+<li><strong>setuptools</strong></li>
+<li><strong>thrift</strong></li>
+<li><strong>wsgiserver</strong></li>
+</ul>
+
+<p>Some extra features require additional software packages. See below:</p>
+
+<h3>
+<a id="optional" class="anchor" href="#optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Optional</h3>
+
+<ul>
+<li>
+<strong>BeautifulSoup</strong>                                  <em>Few plugins support</em>
+</li>
+<li>
+<strong>PIL</strong> (python-imaging)                           <em>Captcha recognition</em>
+</li>
+<li>
+<strong>colorlog</strong>                                       <em>Colored log</em>
+</li>
+<li>
+<strong>bjoern</strong> (<a href="https://github.com/jonashaag/bjoern">https://github.com/jonashaag/bjoern</a>) <em>More responsive web interface</em>
+</li>
+<li>
+<strong>feedparser</strong>                                     <em>RSS parsing</em>
+</li>
+<li>
+<strong>node.js</strong>                                        <em>ClickNLoad and other plugins</em>
+
+<ul>
+<li>or <strong>ossp-js</strong>
+</li>
+<li>or <strong>pyv8</strong>
+</li>
+<li>or <strong>rhino</strong>
+</li>
+<li>or <strong>spidermonkey</strong>
+</li>
+</ul>
+</li>
+<li>
+<strong>pyOpenSSL</strong>                                      <em>SSL support</em>
+</li>
+<li>
+<strong>pycrypto</strong>                                       <em>RSDF/CCF/DLC decrypting</em>
+</li>
+<li>
+<strong>simplejson</strong>                                     <em>JSON speedup</em>
+</li>
+<li>
+<strong>tesseract</strong>                                      <em>Captcha OCR support</em>
+</li>
+</ul>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="first-start" class="anchor" href="#first-start" aria-hidden="true"><span class="octicon octicon-link"></span></a>First Start</h3>
+
+<p>Run:</p>
+
+<pre><code>python pyload.py
+</code></pre>
+
+<p>and follow the setup assistant instructions.</p>
+
+<blockquote>
+<p><strong>Note:</strong>
+If you have installed pyLoad by a package-manager, command <code>python pyload.py</code> might be equivalent to <code>pyload</code>.</p>
+</blockquote>
+
+<p>If something go wrong, you can restart the setup assistant typing:</p>
+
+<pre><code>python pyload.py -s
+</code></pre>
+
+<p>Or you can even edit the configuration files located in your pyLoad home directory
+(usually <code>%userprofile%/pyload</code> on Windows or <code>~/.pyload</code> otherwise) with your favorite editor.</p>
+
+<p>For a short description of all the configuration options available visit: <a href="http://pyload.org/configuration">http://pyload.org/configuration</a>.</p>
+
+<h3>
+<a id="web-user-interface" class="anchor" href="#web-user-interface" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web User Interface</h3>
+
+<p>Run:</p>
+
+<pre><code>python pyload.py
+</code></pre>
+
+<p>So, to retrieve it point your browser to the socket address configured by setup (default to <code>http://localhost:8000</code>).</p>
+
+<p>You can get a list of accepted arguments typing:</p>
+
+<pre><code>python pyload.py -h
+</code></pre>
+
+<h3>
+<a id="command-line-interface" class="anchor" href="#command-line-interface" aria-hidden="true"><span class="octicon octicon-link"></span></a>Command Line Interface</h3>
+
+<p>Run:</p>
+
+<pre><code>python pyload-cli.py -l
+</code></pre>
+
+<p>You can get a list of accepted arguments typing:</p>
+
+<pre><code>python pyload-cli.py -h
+</code></pre>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<ul>
+<li>pyLoad roadmap: <a href="https://github.com/pyload/pyload/milestones">https://github.com/pyload/pyload/milestones</a>.</li>
+<li>To report bugs, suggest features, ask for a question or help us out, visit: <a href="https://github.com/pyload/pyload/issues">https://github.com/pyload/pyload/issues</a>.</li>
+<li>To request the merge of your code in the pyLoad repository, open a new <em>pull request</em> here: <a href="https://github.com/pyload/pyload/pulls">https://github.com/pyload/pyload/pulls</a>.</li>
+<li>Documentation about how extending pyLoad can be found at: <a href="http://docs.pyload.org">http://docs.pyload.org</a>.</li>
+</ul>
+
+<h2>
+<a id="translations" class="anchor" href="#translations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Translations</h2>
+
+<p>The localization process take place on Crowdin: <a href="http://crowdin.net/project/pyload">http://crowdin.net/project/pyload</a>.</p>
+
+<h3>
+<a id="send-a-tip-for-translators" class="anchor" href="#send-a-tip-for-translators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Send a tip for translators</h3>
+
+<p>If you want to explain a translatable string to make the translation process easier you can do that using comment block starting with <code>L10N:</code>. For example:</p>
+
+<pre><code>python
+# L10N: Here the tip for translators
+# Thanks
+print _("A translatable string")
+</code></pre>
+
+<p>Translators will see:</p>
+
+<pre><code>L10N: Here the tip for translators
+Thanks
+</code></pre>
+
+<h3>
+<a id="update-templates" class="anchor" href="#update-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update templates</h3>
+
+<p>To update POT files type:</p>
+
+<pre><code>paver generate_locale
+</code></pre>
+
+<p>To automatically upload the updated POTs on Crowdin for the localization process just type:</p>
+
+<pre><code>paver upload_translations -k [api_key]
+</code></pre>
+
+<p>the API Key can be retrieved in the Settings panel of the project on Crowdin. This is allowed only to the administrators.</p>
+
+<h3>
+<a id="retrieve-po-files" class="anchor" href="#retrieve-po-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Retrieve PO files</h3>
+
+<p>Updated PO files can be automatically download from Crowdin typing:</p>
+
+<pre><code>paver download_translations -k [api_key]
+</code></pre>
+
+<p>This is allowed only to administrators, <strong>users can download the last version of the translations using the Crowdin web interface</strong>.</p>
+
+<h3>
+<a id="compile-po-files" class="anchor" href="#compile-po-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compile PO files</h3>
+
+<p>MO files can be generated typing:</p>
+
+<pre><code>paver compile_translations
+</code></pre>
+
+<p>To compile a single file just use command <code>msgfmt</code>.
+For example to compile a core.po file type:</p>
+
+<pre><code>msgfmt -o core.mo core.po
+</code></pre>
+
+<h2>
+<a id="licensing" class="anchor" href="#licensing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Licensing</h2>
+
+<h3>
+<a id="main-program" class="anchor" href="#main-program" aria-hidden="true"><span class="octicon octicon-link"></span></a>Main program</h3>
+
+<p>Please refer to the attached <a href="/LICENSE.md">LICENSE.md</a> for the extended license.</p>
+
+<h3>
+<a id="plugins" class="anchor" href="#plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugins</h3>
+
+<p>According to the terms of the pyLoad license, official plugins must be treated as an extension of the main program
+and released under the same license of pyLoad or a compatible one:</p>
+
+<ul>
+<li>Any plugin published <strong>without the __license__ attribute</strong> is implied published under the same license of pyLoad.</li>
+<li>Only plugins published <strong>with a compatible license</strong> will be accepted as official and included in the pyLoad repository.</li>
+<li>
+<strong>Un-official plugins are not supported</strong>, so any issue report or feature request regarding this kind of plugin will be rejected.</li>
+<li>Is recommended to put a <strong>shorten</strong> license notice only if nedfull to avoid misunderstandings about the adopted license.</li>
+</ul>
+
+<h2>
+<a id="plugin-policy" class="anchor" href="#plugin-policy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugin policy</h2>
+
+<ul>
+<li>No cracking website or service</li>
+<li>No drugs website or service</li>
+<li>No e-commerce website or service</li>
+<li>No government website or service</li>
+<li>No illegal website or service in the country where its servers are located</li>
+<li>No pedopornography website or service</li>
+<li>No private website or service</li>
+<li>No racist website or service</li>
+<li>No warez website or service</li>
+<li>No weapon website or service</li>
+<li>...</li>
+</ul>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>Please refer to the attached <a href="/CREDITS.md">CREDITS.md</a> for the extended credits.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/vuolter/pyload">pyLoad</a> is maintained by <a href="https://github.com/orgs/pyload/people">pyLoad Team</a>.</span>
+
+        <span class="site-footer-credits">Generated using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a> modded by <a href="https://github.com/vuolter">Walter Purcaro</a>.</span>
+      </footer>
+
+    </section>
+
+
+  </body>
+</html>
