@@ -10,8 +10,8 @@ body {
   color: #606c71; }
 
 section {
-	padding: 1em;
-	text-align: justify;
+  padding: 1em;
+  text-align: justify;
 }
 
 img {
@@ -24,26 +24,39 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
+   
+.btn {
+  width: 10rem;
+  float: left; }
 
-.btn, .btn-strong {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+.btn-circle {  
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 15px 3px rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
   border-style: solid;
-  border-width: 3px;
-  border-radius: 2.0rem;
+  border-width: 3px; }
+
+.btn a {
+  display: block;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;    
+  text-align:center; 
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
 
-.btn, .btn-strong + .btn, .btn-strong {
-  margin-left: .1rem; }
-
-.btn-strong {
+.bold {
   font-weight: bold; }
 
-.btn:hover, .btn-strong:hover {
+.btn-circle:hover {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
@@ -51,21 +64,21 @@ a {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); }
 
 @media screen and (min-width: 64em) {
-  .btn, .btn-strong {
+  .btn {
     padding: 0.75rem 1.4rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .btn, .btn-strong {
+  .btn {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem; } }
 
 @media screen and (max-width: 42em) {
-  .btn, .btn-strong {
+  .btn {
     display: block;
     width: 100%;
     padding: 0.75rem;
     font-size: 0.9rem; }
-    .btn, .btn-strong + .btn, .btn-strong {
+    .btn {
       margin-top: 1rem;
       margin-left: 0; } }
 
