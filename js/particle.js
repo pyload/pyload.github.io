@@ -18,12 +18,7 @@
         target = {x: 0, y: height};
 
         largeHeader = document.getElementById('page-header');
-        largeHeader.style.height = height+'px';
-
-        canvas = document.getElementById('page-canvas');
-        canvas.width = width;
-        canvas.height = height;
-        ctx = canvas.getContext('2d');
+        largeHeader.style.overflow = 'auto';
 
         // create particles
         circles = [];
@@ -31,6 +26,8 @@
             var c = new Circle();
             circles.push(c);
         }
+
+		
         animate();
     }
 
