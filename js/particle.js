@@ -18,7 +18,7 @@
         target = {x: 0, y: height};
 
         largeHeader = document.getElementById('page-header');
-        largeHeader.style.height = height+'px';
+        largeHeader.style.overflow = 'auto';
 
         canvas = document.getElementById('page-canvas');
         canvas.width = width;
