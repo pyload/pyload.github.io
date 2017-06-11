@@ -20,14 +20,17 @@
         largeHeader = document.getElementById('page-header');
         largeHeader.style.overflow = 'auto';
 
+        canvas = document.getElementById('page-canvas');
+        canvas.width = width;
+        canvas.height = height;
+        ctx = canvas.getContext('2d');
+
         // create particles
         circles = [];
         for(var x = 0; x < width*0.2; x++) {
             var c = new Circle();
             circles.push(c);
         }
-
-		
         animate();
     }
 
