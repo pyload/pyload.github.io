@@ -49,7 +49,7 @@ Additionaly, pyLoad has a great variety of plugins to automate common tasks and 
 <p>pyLoad has a fully featured and well documented Application Programming Interface, easily extendable and accessible by external tools, cross-platform apps or other softwares.
 Just take a look to the <a href="https://github.com/pyload/pyload/tree/master#development">Development section</a> for more info about that.</p>
 
-<p>For news, wiki, forum and further info visit the pyLoad website: <a href="http://pyload.org/">http://pyload.org/</a>.</p>
+<p>For news, wiki, forum and further info visit the pyLoad website: <a href="http://pyload.net/">http://pyload.net/</a>.</p>
 
 <p>Or joining us at <code>#pyload</code> on <code>irc.freenode.net</code>.</p>
 
@@ -174,52 +174,50 @@ If you wanna use pyLoad on Windows, it's hightly recommented to install the late
 
 <p>Run:</p>
 
-<pre><code>python pyload.py
+<pre><code>python pyLoadCore.py
 </code></pre>
 
 <p>and follow the setup assistant instructions.</p>
 
 <blockquote>
 <p><strong>Note:</strong>
-If you have installed pyLoad by a package-manager, command <code>python pyload.py</code> might be equivalent to <code>pyload</code>.</p>
+If you have installed pyLoad by a package-manager, command <code>python pyLoadCore.py</code> might be equivalent to <code>pyLoadCore</code>.</p>
 </blockquote>
 
 <p>If something go wrong, you can restart the setup assistant typing:</p>
 
-<pre><code>python pyload.py -s
+<pre><code>python pyLoadCore.py -s
 </code></pre>
 
 <p>Or you can even edit the configuration files located in your pyLoad home directory
 (usually <code>%userprofile%/pyload</code> on Windows or <code>~/.pyload</code> otherwise) with your favorite editor.</p>
 
-<p>For a short description of all the configuration options available visit: <a href="http://pyload.org/configuration">http://pyload.org/configuration</a>.</p>
+<p>You can get a list of accepted arguments typing:</p>
+
+<pre><code>python pyLoadCore.py -h
+</code></pre>
 
 <h3>
 <a id="web-user-interface" class="anchor" href="#web-user-interface" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web User Interface</h3>
 
 <p>Run:</p>
 
-<pre><code>python pyload.py
+<pre><code>python pyLoadCore.py
 </code></pre>
 
 <p>So, to retrieve it point your browser to the socket address configured by setup (default to <code>http://localhost:8000</code>).</p>
-
-<p>You can get a list of accepted arguments typing:</p>
-
-<pre><code>python pyload.py -h
-</code></pre>
 
 <h3>
 <a id="command-line-interface" class="anchor" href="#command-line-interface" aria-hidden="true"><span class="octicon octicon-link"></span></a>Command Line Interface</h3>
 
 <p>Run:</p>
 
-<pre><code>python pyload-cli.py -l
+<pre><code>python pyLoadCli.py -l
 </code></pre>
 
 <p>You can get a list of accepted arguments typing:</p>
 
-<pre><code>python pyload-cli.py -h
+<pre><code>python pyLoadCli.py -h
 </code></pre>
 
 <h2>
@@ -229,7 +227,7 @@ If you have installed pyLoad by a package-manager, command <code>python pyload.p
 <li>pyLoad roadmap: <a href="https://github.com/pyload/pyload/milestones">https://github.com/pyload/pyload/milestones</a>.</li>
 <li>To report bugs, suggest features, ask for a question or help us out, visit: <a href="https://github.com/pyload/pyload/issues">https://github.com/pyload/pyload/issues</a>.</li>
 <li>To request the merge of your code in the pyLoad repository, open a new <em>pull request</em> here: <a href="https://github.com/pyload/pyload/pulls">https://github.com/pyload/pyload/pulls</a>.</li>
-<li>Documentation about how extending pyLoad can be found at: <a href="http://docs.pyload.org">http://docs.pyload.org</a>.</li>
+<li>Documentation about how extending pyLoad can be found at: <a href="https://github.com/pyload/pyload/wiki">https://github.com/pyload/pyload/wiki</a>.</li>
 </ul>
 
 <h2>
